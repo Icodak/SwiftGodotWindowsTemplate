@@ -17,7 +17,10 @@ let package = Package(
     targets: [
         .target(
             name: "App",
-            dependencies: ["SwiftGodot"]
+            dependencies: ["SwiftGodot"],
+            plugins: [
+                .plugin(name: "EntryPointGeneratorPlugin", package: "SwiftGodot")
+            ]
         )
     ]
 )
