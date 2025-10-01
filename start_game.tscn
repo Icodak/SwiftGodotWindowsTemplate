@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://psb7vj5e0cm8"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="SpinningCube" type="SpinningCube" parent="."]
+transform = Transform3D(-0.7845992, 0, 0.6199613, 0, 1, 0, -0.6199613, 0, -0.7845992, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.81964225, 0.5728757, 0, -0.5728757, 0.81964225, 0, 1.2790167, 2.7777088)

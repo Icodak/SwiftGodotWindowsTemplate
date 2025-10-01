@@ -1,0 +1,60 @@
+[configuration]
+entry_symbol = "swift_entry_point"
+compatibility_minimum = 4.2
+
+[libraries]
+macos.debug = "res://bin/libApp.dylib"
+macos.release = "res://bin/libApp.dylib"
+linux.debug.x86_64 = "res://bin/libApp.so"
+linux.release.x86_64 = "res://bin/libApp.so"
+windows.debug.x86_64 = "res://bin/App.dll"
+windows.release.x86_64 = "res://bin/App.dll"
+
+
+[dependencies]
+macos.release = {"res://bin/libSwiftGodot.dylib" : ""}
+macos.debug = {"res://bin/libSwiftGodot.dylib" : ""}
+linux.debug.x86_64 = {"res://bin/libSwiftGodot.so" : ""}
+linux.release.x86_64 = {"res://bin/libSwiftGodot.so" : ""}
+windows.debug = {
+    "res://bin/SwiftGodot.dll" : "",
+    "res://bin/BlocksRuntime.dll" : "",
+    "res://bin/dispatch.dll" : "",
+    "res://bin/Foundation.dll" : "",
+    "res://bin/FoundationNetworking.dll" : "",
+    "res://bin/FoundationXML.dll" : "",
+    "res://bin/swiftCore.dll" : "",
+    "res://bin/swiftCRT.dll" : "",
+    "res://bin/swiftDispatch.dll" : "",
+    "res://bin/swiftDistributed.dll" : "",
+    "res://bin/swiftObservation.dll" : "",
+    "res://bin/swiftRegexBuilder.dll" : "",
+    "res://bin/swiftRemoteMirror.dll" : "",
+    "res://bin/swiftSwiftOnoneSupport.dll" : "",
+    "res://bin/swiftWinSDK.dll" : "",
+    "res://bin/swift_Concurrency.dll" : "",
+    "res://bin/swift_Differentiation.dll" : "",
+    "res://bin/swift_RegexParser.dll" : "",
+    "res://bin/swift_StringProcessing.dll" : "",
+}
+windows.release = {
+    "res://bin/SwiftGodot.dll" : "",
+    "res://bin/BlocksRuntime.dll" : "",
+    "res://bin/dispatch.dll" : "",
+    "res://bin/Foundation.dll" : "",
+    "res://bin/FoundationNetworking.dll" : "",
+    "res://bin/FoundationXML.dll" : "",
+    "res://bin/swiftCore.dll" : "",
+    "res://bin/swiftCRT.dll" : "",
+    "res://bin/swiftDispatch.dll" : "",
+    "res://bin/swiftDistributed.dll" : "",
+    "res://bin/swiftObservation.dll" : "",
+    "res://bin/swiftRegexBuilder.dll" : "",
+    "res://bin/swiftRemoteMirror.dll" : "",
+    "res://bin/swiftSwiftOnoneSupport.dll" : "",
+    "res://bin/swiftWinSDK.dll" : "",
+    "res://bin/swift_Concurrency.dll" : "",
+    "res://bin/swift_Differentiation.dll" : "",
+    "res://bin/swift_RegexParser.dll" : "",
+    "res://bin/swift_StringProcessing.dll" : "",
+}

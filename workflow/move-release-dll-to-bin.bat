@@ -1,0 +1,1 @@
+robocopy "../export/winclient" "../export/winclient/bin" *.dll /MOV /NFL /NDL /NJH /NJS /NP /NS  
